@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Contato {
 	
-	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)//para gerar o id e identificar que ele é a chave primária
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
 	private String nome;

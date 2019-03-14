@@ -18,7 +18,7 @@ import agenda.models.Contato;
 @RequestMapping("/contatos")
 public class ContatoController {
 	
-	@Autowired //injeta o contatoDao, através do spring
+	@Autowired
 	private ContatoDAO contatoDao;
 	
 	@RequestMapping("/cadastroContato")

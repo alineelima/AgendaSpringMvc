@@ -11,8 +11,8 @@ import agenda.dao.ContatoDAO;
 
 
 @SuppressWarnings("deprecation")
-@EnableWebMvc //usando spring mvc
-@ComponentScan(basePackageClasses= {ContatoDAO.class, HomeController.class}) //para encontrar os controllers
+@EnableWebMvc
+@ComponentScan(basePackageClasses= {ContatoDAO.class, HomeController.class})
 public class AppWebConfiguration extends WebMvcConfigurerAdapter{
 	
 	@Bean
@@ -20,9 +20,6 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter{
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
-		
-		//resolver.setExposeContextBeansAsAttributes(true);
-		//resolver.setExposedContextBeanNames("carrinhoCompras");
 		
 		return resolver;
 	}

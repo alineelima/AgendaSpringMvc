@@ -30,9 +30,9 @@ public class JPAConfiguration {
 		factoryBean.setDataSource(dataSource);
 		
 		Properties props = new Properties();
-		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect"); //comunicação do hibernate com o banco
-		props.setProperty("hibernate.show_sql", "true"); //permite ver o sql gerado pelo hibernate
-		props.setProperty("hibernate.hbm2ddl.auto", "update"); //mapping jpa, quando o modelo mudar o hibernate mudará o banco
+		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+		props.setProperty("hibernate.show_sql", "true");
+		props.setProperty("hibernate.hbm2ddl.auto", "update");
 		factoryBean.setJpaProperties(props);
 		factoryBean.setJpaProperties(props);
 		

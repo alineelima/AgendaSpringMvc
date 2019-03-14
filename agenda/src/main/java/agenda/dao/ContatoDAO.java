@@ -14,8 +14,8 @@ import agenda.models.Contato;
 @Transactional
 public class ContatoDAO {
 	
-	@PersistenceContext //funciona como Container que guarda as entidades que estão sendo gerenciadas pelo EntityManager
-	private EntityManager manager; //recurso responsável por realizar as operações de sincronismo com o banco de dados
+	@PersistenceContext
+	private EntityManager manager;
 	
 	public void gravar(Contato contato) {
 		manager.persist(contato);
